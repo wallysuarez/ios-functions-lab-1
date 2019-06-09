@@ -43,8 +43,7 @@ Function Definition
 `func min2(a: Int, b: Int) -> Int`
 
 Example:
-
-Function call: `min2(a:1, b:2)`
+Input: `min2(a:1, b:2)`
 
 Output: `1`
 
@@ -57,8 +56,7 @@ Function Definition:
 `func lastDigit(_ number: Int) -> Int`
 
 Example:
-
-Function call: `lastDigit(12345)`
+Input: `lastDigit(12345)`
 
 Output: `5`
 
@@ -99,9 +97,6 @@ let tipPercentage = 0.15
 
 //Write your code below
 
-
-
-
 let myFinalCost = totalWithTip() //Fill in the arguments
 ```
 
@@ -112,7 +107,6 @@ let taxPercentage = 0.09
 
 //Write your code below
 
-
 let myFinalCostWithTipAndTax = totalWithTipAndTax() //Fill in the arguments in function
 ```
 
@@ -122,8 +116,7 @@ let myFinalCostWithTipAndTax = totalWithTipAndTax() //Fill in the arguments in f
 Implement a function named `repeatPrint` that takes a string `message` and a integer `count` as parameters. The function should print `message` `count` number of times and then print a newline.
 
 Example:
-
-Function call: `repeatPrint(message: "+", count: 10)`
+Input: `repeatPrint(message: "+", count: 10)`
 
 Output: `++++++++++`
 
@@ -133,12 +126,10 @@ Output: `++++++++++`
 Write a function named `first` that takes an Int named n and returns an array with the first n numbers starting from 1.
 
 Function Definition
-
 `func first(_ n: Int) -> [Int]`
 
 Example:
-
-Function call: `first(3)`
+Input: `first(3)`
 
 Output: `[1, 2, 3]`
 
@@ -159,8 +150,7 @@ Write a function named `reverse` that takes an array of integers named `numbers`
 
 
 Example:
-
-Function call: `reverse([1, 2, 3])`
+Input: `reverse([1, 2, 3])`
 
 Output: `[3, 2, 1]`
 
@@ -180,7 +170,6 @@ Write a function that sums all the even indices of an array of Ints.
 Write a function that flips a dictionary.  All of the keys are now values and all of the values are now keys.
 
 Example:
-
 Input: `[1: "hi", 5: "bye:]`
 
 Output: `["hi": 1, "bye": 5]`
@@ -191,7 +180,6 @@ Output: `["hi": 1, "bye": 5]`
 Write a function that finds the person with the second highest test score in a Dictionary that maps names to scores.
 
 Example:
-
 Input: `["Person 1": 83, "Person 2": 74, "Person 3": 82]`
 
 Output: `"Person 3"`
@@ -235,7 +223,6 @@ Write a function that counts how many characters in a String match a specific ch
 
 Example:
 Input:
-
 ```swift
 let testString = "This is a test string for your code"
 let targetCharacter: Character = "i"
@@ -250,7 +237,6 @@ Write a function that counts how many characters in a String match one of severa
 
 Example:
 Input:
-
 ```swift
 let inputString = "This one is a little more complicated"
 let targetCharacters: [Character] = ["a","e","i","o","u"]
@@ -284,8 +270,6 @@ Output: `93`
 
 Write a function named `timeDifference`. It takes as input four numbers that represent two times in a day and returns the difference in minutes between them. The first two parameters `firstHour` and `firstMinute` represent the hour and minute of the first time. The last two `secondHour` and `secondMinute` represent the hour and minute of the second time. All parameters should have external parameter names with the same name as the local ones.
 
-
-
 Example:
 Input: `timeDifference(firstHour: 12, firstMinute: 3, secondHour: 13, secondMinute: 10)`
 
@@ -295,8 +279,6 @@ Output: `67`
 ## Question 26
 
 Write a function called `filterOdd` that takes an array of ints and returns it with just the even numbers.
-
-
 
 Example:
 Input:  `filterOdd(arr: [1, 2, 3, 4, 5, 6, 7, 8])`
@@ -336,7 +318,7 @@ Output: `[7, 4, 43, 11, 2]`
 
 Write a function that takes an array of bools and returns a dictionary that maps the bools to how many times they appear in the array.
 
-Example
+Example:
 Input:  `countBools(arr: [true, true, false, true, false, true])`
 
 Output: `[false: 2, true: 4]`
