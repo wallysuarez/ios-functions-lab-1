@@ -79,7 +79,7 @@ return smallestNum
 print(min2(a: 1, b: 2))
 ```
 
-## Question 4
+## Question 4   ✔︎
 
 Write a function that takes an `Int` and returns its last digit. Name the function `lastDigit`. Use _ to ignore the external parameter name.
 
@@ -92,8 +92,10 @@ Input: `lastDigit(12345)`
 Output: `5`
 
 ```swift
-
-
+func lastDigit(_ number: Int) -> Int {
+return number % 10
+}
+print(lastDigit(12345))
 ```
 ## Question 5   ✔︎
 
@@ -106,7 +108,7 @@ func sumOfTwoInts(a:Int, b:Int) -> Int {
 print(sumOfTwoInts(a: 8, b: 9))
 ```
 
-## Question 6
+## Question 6   ✔︎
 
 Write a function takes in any number grade and returns a corresponding letter grade.
 
@@ -120,18 +122,49 @@ Write a function takes in any number grade and returns a corresponding letter gr
 | Below 65 | F |
 
 ```swift
-
-
+func letterGrade(grade: Int) -> String {
+    switch grade {
+    case 100:
+        return "A+"
+    case 90...99:
+        return "A"
+    case 80...89:
+        return "B"
+    case 70...79:
+        return "C"
+    case 65...69:
+        return "D"
+    case 0...65:
+        return "F"
+    default:
+        return "enter number grade"
+    }
+}
+print(letterGrade(grade: 100))
 ```
-## Question 7
+
+## Question 7   ✔︎
 
 Make a calculator function that takes in three parameters (two numbers and one operator) and returns the answer of the operation.
 
 Operator parameter: (+, -, x, /)
 
 ```swift
-
-
+func basicCalculator(a: Int, b: Int, calcOperator: Character) -> Int {
+    switch calcOperator {
+    case "+":
+        return a + b
+    case "-":
+        return a - b
+    case "*":
+        return a * b
+    case "/":
+        return a / b
+    default:
+        return 0
+    }
+}
+print(basicCalculator(a: 8025, b: 5, calcOperator: "/"))
 ```
 ## Question 8   ✔︎
 
