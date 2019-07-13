@@ -50,7 +50,7 @@ print(todaysTempCheck(temp: todaysTemperature))
 ```
 
 
-## Question 3
+## Question 3   ✔︎
 
 Write a function named `min2` that takes two `Int` values, `a` and `b`, and returns the smallest one.
 
@@ -62,6 +62,22 @@ Input: `min2(a:1, b:2)`
 
 Output: `1`
 
+
+```swift
+var smallestNum = 0
+
+func min2(a: Int, b: Int) -> Int {
+    if a < b {
+    smallestNum = a
+    } else {
+        if a > b {
+        smallestNum = b
+        }
+    }
+return smallestNum
+}
+print(min2(a: 1, b: 2))
+```
 
 ## Question 4
 
@@ -117,7 +133,7 @@ Operator parameter: (+, -, x, /)
 
 
 ```
-## Question 8
+## Question 8   ✔︎
 
 Write a function so that it will print out **total cost after tip.**
 
@@ -143,13 +159,17 @@ let taxPercentage = 0.09
 
 //Write your code below
 
-let myFinalCostWithTipAndTax = totalWithTipAndTax() //Fill in the arguments in function
+func totalWithTipAndTax() -> Double {
+    let tax = (mealCostDub * taxPercentage)
+    let tip = (mealCostDub * tipPercentage)
+    let finalMealCost = (mealCostDub + tax + tip)
+    return finalMealCost
+}
+let myFinalCostWithTipAndTax = totalWithTipAndTax()
+print(myFinalCostWithTipAndTax)
 ```
 
-```swift
 
-
-```
 ## Question 9
 
 Implement a function named `repeatPrint` that takes a string `message` and a integer `count` as parameters. The function should print `message` `count` number of times and then print a newline.
