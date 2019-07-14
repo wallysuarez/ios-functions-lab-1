@@ -203,7 +203,7 @@ print(myFinalCostWithTipAndTax)
 ```
 
 
-## Question 9
+## Question 9   ✔︎
 
 Implement a function named `repeatPrint` that takes a string `message` and a integer `count` as parameters. The function should print `message` `count` number of times and then print a newline.
 
@@ -213,10 +213,15 @@ Input: `repeatPrint(message: "+", count: 10)`
 Output: `++++++++++`
 
 ```swift
-
-
+func repeatPrint(message: String, count: Int) {
+    for _ in 1...count {
+        print(message, terminator:"")
+    }
+}
+repeatPrint(message: "+", count: 10)
 ```
-## Question 10
+
+## Question 10  ✔︎
 
 Write a function named `first` that takes an Int named n and returns an array with the first n numbers starting from 1.
 
@@ -229,21 +234,40 @@ Input: `first(3)`
 Output: `[1, 2, 3]`
 
 ```swift
-
-
+func first(_ n: Int) -> [Int] {
+    var array = [Int]()
+    for number in 1...n {
+        array.append(number)
+    }
+    return array
+}
+print(first(3))
 ```
-## Question 11
+
+## Question 11 ✔︎
 
 Write a function that prints the numbers from 1 to x, except:
 
-If the number if a multiple of 3, print `"Fizz"` instead of the number
+If the number is a multiple of 3, print `"Fizz"` instead of the number
 If the number is a multiple of 5, print `"Buzz"` instead of the number
 If the number is a multiple of 3 AND 5, print `"FizzBuzz"` instead of the number
 Your function should take in one parameter: x (the number to count up to)
 
 ```swift
-
-
+func numPrinter(x: Int) {
+    for i in 1...x {
+        if i % 3 == 0 && i % 5 == 0 {
+            print("FizzBuzz")
+        } else if i % 3 == 0 && i % 5 != 0 {
+            print("Fizz")
+        } else if i % 5 == 0 && i % 3 != 0 {
+            print("Buzz")
+        } else {
+            print(i)
+        }
+    }
+}
+numPrinter(x: 15)
 ```
 ## Question 12
 
@@ -259,14 +283,17 @@ Output: `[3, 2, 1]`
 
 
 ```
+
 ## Question 13
 
 Write a function that prints out the most frequently appearing Int in an array of Int.
+
 
 ```swift
 
 
 ```
+
 ## Question 14
 
 Write a function that sums all the even indices of an array of Ints.
@@ -275,6 +302,7 @@ Write a function that sums all the even indices of an array of Ints.
 
 
 ```
+
 ## Question 15
 
 Write a function that flips a dictionary.  All of the keys are now values and all of the values are now keys.
@@ -288,6 +316,7 @@ Output: `["hi": 1, "bye": 5]`
 
 
 ```
+
 ## Question 16
 
 Write a function that finds the person with the second highest test score in a Dictionary that maps names to scores.
@@ -301,6 +330,7 @@ Output: `"Person 3"`
 
 
 ```
+
 ## Question 17
 
 Write a function that determines if a value is inside of array.
